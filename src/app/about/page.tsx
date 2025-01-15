@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import constants from "../utils/constantUtils";
 import Timeline from "../components/Timeline";
 import LogoClouds from "../components/LogoClouds";
@@ -55,7 +56,7 @@ export default function About() {
             </p>
           </div>
           <p className="flex-none w-1/4 mt-0 flex items-center justify-center">
-            <img alt="" src={constants.companyLogo} className="h-auto w-auto" />
+            <Image alt="" src={constants.companyLogo} width={150} height={150} className="h-auto w-auto" />
           </p>
         </div>
       </div>

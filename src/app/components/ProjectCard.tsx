@@ -14,7 +14,6 @@ type infoParam = {
 
 export default function ProjectCard({ cardInfo }: { cardInfo: infoParam }) {
   const { Meta } = Card;
-  // const { Text } = Typography;
 
   return (
     <Card

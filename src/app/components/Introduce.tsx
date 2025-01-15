@@ -38,7 +38,7 @@ export default function Introduce() {
               &nbsp;I&#39;m {constants.headerTitle}.
             </p>
 
-            <p className="text-lg sm:text-xl">
+            <p className="text-lg sm:text-xl mt-2">
               {constants.introduce.map((item) => (
                 <span key={item.keywords}>
                   <span className="text-gray-500">-&nbsp; {item.prefix}</span>

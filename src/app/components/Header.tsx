@@ -94,6 +94,7 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       className="text-sm/6 font-semibold text-gray-900"
+                      onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
                     </Link>

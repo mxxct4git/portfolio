@@ -187,6 +187,39 @@ const constants = {
     },
   ],
 
+  latestPostList: [
+    {
+      id: 1,
+      title: "HBase 连接",
+      href: "https://mxxct4git.github.io/2023/03/31/Hadoop/HBase/HBase-4%20连接/",
+      description:
+        "以 alihbase-client 2.8.6 jar 为例，介绍 HBase 连接的基本步骤。",
+      date: "Mar 31, 2023",
+      datetime: "2023-03-31",
+      category: "HBase",
+    },
+    {
+      id: 2,
+      title: "深入理解 Kafka",
+      href: "https://mxxct4git.github.io/2022/03/06/Kafka/Kafka-3%20%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Kafka/",
+      description:
+        "以 alihbase-client 2.8.6 jar 为例，介绍 HBase 连接的基本步骤。",
+      date: "Mar 06, 2022",
+      datetime: "2022-03-06",
+      category: "Kafka",
+    },
+    {
+      id: 3,
+      title: "Flink 总结",
+      href: "https://mxxct4git.github.io/2020/10/20/Flink/Flink-2%20%E6%80%BB%E7%BB%93/",
+      description:
+        "Flink 是一个开源的分布式计算框架，本文总结了 Flink 的一些基本概念和使用方法。",
+      date: "Oct 20, 2020",
+      datetime: "2020-10-20",
+      category: "Flink",
+    },
+  ],
+
   author: "Jiahao Zhang",
   headerTitle: "Panda",
   language: "en-us",

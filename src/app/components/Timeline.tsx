@@ -15,7 +15,7 @@ export default function Timeline({ isShowMore }: { isShowMore: boolean }) {
             key={index}
             time={elem.date}
             extra={elem.title}
-            type={elem.type}
+            type={getStatus(elem.type)}
           >
             {elem.content}
           </SemiTimeline.Item>
@@ -33,4 +33,17 @@ export default function Timeline({ isShowMore }: { isShowMore: boolean }) {
       )}
     </div>
   );
+}
+
+function getStatus(status: string): "error" | "default" | "ongoing" | "success" | "warning" | undefined {
+  switch (status) {
+    case "error":
+    case "default":
+    case "ongoing":
+    case "success":
+    case "warning":
+      return status;
+    default:
+      return "default"; // 设置默认值
+  }
 }

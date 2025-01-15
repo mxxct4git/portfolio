@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 type infoParam = {
-  id: string;
+  id: number;
   title: string;
   description: string;
   coverAlt: string;

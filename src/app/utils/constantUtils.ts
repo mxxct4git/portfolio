@@ -5,7 +5,7 @@ const constants = {
   navigation: [
     { name: "Home", href: "/", blank: false },
     { name: "Posts", href: "https://mxxct4git.github.io", blank: true },
-    { name: "Projects", href: "#", blank: false },
+    { name: "Projects", href: "/projects/1", blank: false },
     { name: "About", href: "/about", blank: false },
   ],
   companyName: "Panda",
@@ -112,7 +112,7 @@ const constants = {
         "One-data service is a platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place.",
       coverAlt: "example",
       coverUrl:
-        "https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/root-web-sites/card-cover-docs-demo.jpeg",
+        "https://img.alicdn.com/imgextra/i1/O1CN01lpsDec1Z6v0R2Pi02_!!6000000003146-2-tps-2320-1264.png",
       cardContent:
         "One-data service is a platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place. It involves integrating data from various sources, providing a unified data model, and enabling users to access data in real-time and with ease.",
     },
@@ -122,7 +122,7 @@ const constants = {
       description:
         "Real-time data analysis is a platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time.",
       coverAlt: "example",
-      coverUrl: "/images/flink.jpg",
+      coverUrl: "https://img.alicdn.com/imgextra/i4/O1CN01A4zJCm1uTSBaxhkZw_!!6000000006038-2-tps-1361-1274.png",
       cardContent:
         "Real-time data analysis is a platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time. It involves analyzing data in real-time, providing real-time data visualization, and enabling users to interact with data in real-time.",
     },
@@ -152,7 +152,7 @@ const constants = {
     {
       id: 5,
       alt: "Spring Boot",
-      src: "https://spring.io/img/spring-2.svg",
+      src: "/images/spring-2.svg",
     },
     {
       id: 6,

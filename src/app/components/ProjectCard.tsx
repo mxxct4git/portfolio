@@ -17,7 +17,7 @@ export default function ProjectCard({ cardInfo }: { cardInfo: infoParam }) {
 
   return (
     <Card
-      style={{ maxWidth: 340 }}
+      style={{ maxWidth: '24rem', margin: "0.5rem" }}
       title={
         <Meta
           title={cardInfo.title}
@@ -41,12 +41,14 @@ export default function ProjectCard({ cardInfo }: { cardInfo: infoParam }) {
         </Link>
       }
       cover={
-        <Image
-          alt={cardInfo.coverAlt}
-          src={cardInfo.coverUrl}
-          width={300}
-          height={200}
-        />
+        <div style={{ position: "relative", width: "100%", height: "12rem" }}>
+          <Image
+            alt={cardInfo.coverAlt}
+            src={cardInfo.coverUrl}
+            fill
+            style={{ objectFit: "cover" }} // 确保图片覆盖整个容器
+          />
+        </div>
       }
       footerLine={true}
       // footerStyle={{ display: "flex", justifyContent: "flex-end" }}

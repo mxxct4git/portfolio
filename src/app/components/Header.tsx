@@ -41,9 +41,10 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={
-                  pathname === item.href
+                  item.href === pathname || // 精确匹配
+                  (item.href !== '/' && pathname.startsWith(item.href.replace(/\/\d+$/, '/'))) // 处理非根路径
                     ? "text-base font-semibold text-indigo-500"
-                    : "text-sm font-semibold text-gray-900" // 修正了 "text-sm/6" 为 "text-sm"
+                    : "text-sm/6 font-semibold text-gray-900"
                 }
                 target={item.blank ? "_blank" : undefined} // 根据 item.blank 判断 target 属性
                 rel={item.blank ? "noopener noreferrer" : undefined} // 根据 item.blank 判断 rel 属性

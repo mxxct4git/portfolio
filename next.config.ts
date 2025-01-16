@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       "lf3-starry.byteimg.com",
       "lf3-static.bytednsdoc.com",
       "static.wikia.nocookie.net",
+      "img.alicdn.com",
     ],
   },
 };

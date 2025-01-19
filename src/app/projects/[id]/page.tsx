@@ -2,8 +2,8 @@ import ColorEffect from "../../components/ColorEffect";
 import dynamic from "next/dynamic";
 
 // 动态导入 CarouselDemo 并设置 ssr: false
-const ProjectCarousel = dynamic(
-  () => import("../../components/ProjectCarousel")
+const CarouselDemo = dynamic(
+  () => import("../../components/(carousel)/CarouselDemo")
 );
 
 export default async function Project({
@@ -16,7 +16,7 @@ export default async function Project({
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
       <ColorEffect />
-      <ProjectCarousel id={activeIndex} />
+      <CarouselDemo id={activeIndex} />
     </div>
   );
 }

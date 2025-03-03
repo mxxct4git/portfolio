@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "install": "install --force"
   },
   "dependencies": {
     "@douyinfe/semi-ui": "^2.73.0",

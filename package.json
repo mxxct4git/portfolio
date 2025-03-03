@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install": "install --force"
+    "install": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@douyinfe/semi-ui": "^2.73.0",

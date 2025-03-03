@@ -1,6 +1,5 @@
 import BannerCard from "./BannerCard";
 import BannerTitle from "./BannerTitle";
-import ColorEffect from "../backup/ColorEffect";
 
 export default function AuthorBanner() {
   return (

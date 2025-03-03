@@ -4,8 +4,8 @@
 
 import React from 'react';
 import styles from '@/app/styles/Home.module.css';
-import {Avatar, Container, HoverCard, Text, Flex, Box, Heading} from '@radix-ui/themes';
-import {CodeIcon, GitHubLogoIcon} from '@radix-ui/react-icons';
+import {Avatar, Container, HoverCard, Text} from '@radix-ui/themes';
+import {GitHubLogoIcon} from '@radix-ui/react-icons';
 import {clsx} from 'clsx';
 import {motion} from 'framer-motion';
 import constantUtils from '@/app/utils/constantUtils';

@@ -5,7 +5,7 @@ export default function Example() {
   return (
     <div
       className="bg-white py-24 sm:py-32"
-      style={{ paddingTop: "3.5rem", paddingBottom: "1.5rem" }}
+      style={{ paddingTop: "1.5rem", paddingBottom: "1.5rem" }}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 flex items-center gap-x-6">
@@ -51,24 +51,6 @@ export default function Example() {
                   {post.description}
                 </p>
               </div>
-              {/* <div className="relative mt-8 flex items-center gap-x-4">
-                <Image
-                  alt=""
-                  src={post.author.imageUrl}
-                  width={24}
-                  height={24}
-                  className="size-10 rounded-full bg-gray-50"
-                />
-                <div className="text-sm/6">
-                  <p className="font-semibold text-gray-900">
-                    <a href={post.author.href}>
-                      <span className="absolute inset-0" />
-                      {post.author.name}
-                    </a>
-                  </p>
-                  <p className="text-gray-600">{post.author.role}</p>
-                </div>
-              </div> */}
             </article>
           ))}
         </div>

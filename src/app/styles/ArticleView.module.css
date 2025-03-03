@@ -1,0 +1,25 @@
+.markdownContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* 可选：添加一些内边距 */
+}
+
+.markdownBody {
+  max-width: 1350px; /* 可选：设置最大宽度 */
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可选：添加阴影效果 */
+  padding: 20px; /* 可选：添加内边距 */
+  background-color: #fff; /* 可选：设置背景颜色 */
+  border-radius: 8px; /* 可选：设置圆角 */
+}
+
+.unorderedList {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.orderedList {
+  list-style-type: decimal;
+  padding-left: 20px;
+}

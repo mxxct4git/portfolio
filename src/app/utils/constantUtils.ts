@@ -9,27 +9,35 @@ const constants = {
     { name: "About", href: "/about", blank: false },
   ],
   companyName: "Panda",
-  companyLogo: "/images/panda_1080.png",
-  github: "https://github.com/mxxct4git?tab=repositories",
+  companyLogo: "/images/panda_750.png",
+  github: "https://github.com/mxxct4git",
   email: "jzha0598@student.monash.edu",
 
-  introduce: [
-    {
-      prefix: "A",
-      keywords: "big data development",
-      suffix: "engineer",
-    },
-    {
-      prefix: "With",
-      keywords: "6 years",
-      suffix: "of work experience",
-    },
-    {
-      prefix: "Studing",
-      keywords: "MIT",
-      suffix: "at Monash University, Australia",
-    },
-  ],
+  authorBanner: {
+    "bannerTitle": "Hi,&nbsp;👋&nbsp;I&#39;m Panda",
+    "bannerSubtitle": "Leave this place, go out into the world, and never look back.",
+    "bannerTrans": "离开这里，走出去，别回头看。",
+    "bannerBrief": "MIT at Monash University, Australia",
+    "bannerDesc": "After working for 6 years, I decided to go abroad, changing my identity from a worker to a student, hoping to see the outside world."
+  },
+
+  // introduce: [
+  //   {
+  //     prefix: "A",
+  //     keywords: "big data development",
+  //     suffix: "engineer",
+  //   },
+  //   {
+  //     prefix: "With",
+  //     keywords: "6 years",
+  //     suffix: "of work experience",
+  //   },
+  //   {
+  //     prefix: "Studing",
+  //     keywords: "MIT",
+  //     suffix: "at Monash University, Australia",
+  //   },
+  // ],
 
   about: [
     {
@@ -97,34 +105,38 @@ const constants = {
     {
       id: 1,
       title: "User portrait",
+      mdFilePath: "/vault/Portrait.md",
       description:
-        "User portrait is a platform that provides a comprehensive view of user behavior and preferences, enabling businesses to make informed decisions and improve their products and services.",
+        "A platform that provides a comprehensive view of user behavior and preferences, enabling businesses to make informed decisions and improve their products and services.",
       coverAlt: "user portrait cover",
-      coverUrl:
-        "https://lf3-starry.byteimg.com/obj/starry/image/xeujaamdeoq_数据资产沉淀.png",
+      coverUrl: "https://lf3-starry.byteimg.com/obj/starry/image/xeujaamdeoq_数据资产沉淀.png",
+      picUrl: "https://lf3-starry.byteimg.com/obj/starry/image/xeujaamdeoq_数据资产沉淀.png",
       cardContent:
-        "User portrait is a platform that provides a comprehensive view of user behavior and preferences, enabling businesses to make informed decisions and improve their products and services. It involves analyzing user behavior data, deriving insights, and presenting it in a visually appealing and interactive way.",
+        "A platform that provides a comprehensive view of user behavior and preferences, enabling businesses to make informed decisions and improve their products and services. It involves analyzing user behavior data, deriving insights, and presenting it in a visually appealing and interactive way.",
     },
     {
       id: 2,
-      title: "One-data service",
+      title: "OneData Solution",
+      mdFilePath: "/vault/OneData.md",
       description:
-        "One-data service is a platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place.",
+        "A platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place.",
       coverAlt: "example",
-      coverUrl:
-        "https://img.alicdn.com/imgextra/i1/O1CN01lpsDec1Z6v0R2Pi02_!!6000000003146-2-tps-2320-1264.png",
+      coverUrl: "/images/cover2.png",
+      picUrl: "https://img.alicdn.com/imgextra/i1/O1CN01lpsDec1Z6v0R2Pi02_!!6000000003146-2-tps-2320-1264.png",
       cardContent:
-        "One-data service is a platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place. It involves integrating data from various sources, providing a unified data model, and enabling users to access data in real-time and with ease.",
+        "A platform that provides a single point of access to all data sources, enabling businesses to access and analyze data from various sources in a single place. It involves integrating data from various sources, providing a unified data model, and enabling users to access data in real-time and with ease.",
     },
     {
       id: 3,
       title: "Real-time data analysis",
+      mdFilePath: "/vault/Realtime.md",
       description:
-        "Real-time data analysis is a platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time.",
+        "A platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time.",
       coverAlt: "example",
-      coverUrl: "https://img.alicdn.com/imgextra/i4/O1CN01A4zJCm1uTSBaxhkZw_!!6000000006038-2-tps-1361-1274.png",
+      coverUrl: "/images/cover6.png",
+      picUrl: "/images/realtime.webp",
       cardContent:
-        "Real-time data analysis is a platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time. It involves analyzing data in real-time, providing real-time data visualization, and enabling users to interact with data in real-time.",
+        "A platform that provides real-time data analysis and visualization, enabling businesses to gain insights from data in real-time. It involves analyzing data in real-time, providing real-time data visualization, and enabling users to interact with data in real-time.",
     },
   ],
 

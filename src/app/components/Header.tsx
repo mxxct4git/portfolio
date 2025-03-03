@@ -20,9 +20,9 @@ export default function Header() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            {/* <a href="#" className="-m-1.5 p-1.5">
+            {/* <a href="#" className="ml-2 p-0">
               <span className="sr-only">{constants.companyName}</span>
-              <img alt="" src={constants.companyLogo} className="h-8 w-auto" />
+              <Image alt="" src={constants.companyLogo} width={150} height={150} className="h-8 w-auto" />
             </a> */}
           </div>
           <div className="flex lg:hidden">

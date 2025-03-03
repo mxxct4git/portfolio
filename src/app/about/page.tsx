@@ -3,7 +3,7 @@ import Image from "next/image";
 import constants from "../utils/constantUtils";
 import Timeline from "../components/Timeline";
 import LogoClouds from "../components/LogoClouds";
-import ColorEffect from "../components/ColorEffect";
+import ColorEffect from "../components/backup/ColorEffect";
 
 export default function About() {
   return (

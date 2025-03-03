@@ -1,27 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { Carousel } from "@douyinfe/semi-ui";
+import constantUtils from "../../utils/constantUtils";
 
-function CarouselFunc({ id }: { id: number }) {
-  const [activeIndex, setActiveIndex] = useState(id ?? 0);
+interface CarouselProps {
+  id: number | 0;
+  setActiveIndex: React.Dispatch<React.SetStateAction<number | null>>;
+}
+
+const CarouselFunc: React.FC<CarouselProps> = ({ id, setActiveIndex }) => {
+// function CarouselFunc({ id }: { id: number }) {
+  const [activeIndex, setLocalActiveIndex] = useState(id ?? 0);
 
   const [width, setWidth] = useState(window.innerWidth);
 
+  const [imgList, setImgList] = useState<string[]>([]);
+
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    // 提取coverUrl列表
+    const extractImgList = constantUtils.projectList.map(
+      (item) => item.picUrl
+    );
+    setImgList(extractImgList);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    // 组件刷新时的 id 值: 0, 这里会再次刷新id保证图片展示正确
+    setLocalActiveIndex(id);
+  }, [id]); 
 
   const onChange = (index: number) => {
     console.log("onChange", index);
+    setLocalActiveIndex(index); // 更新 activeIndex 的状态
     setActiveIndex(index); // 更新 activeIndex 的状态
   };
-
-  const imgList = [
-    "https://lf3-starry.byteimg.com/obj/starry/image/xeujaamdeoq_数据资产沉淀.png",
-    "https://img.alicdn.com/imgextra/i1/O1CN01lpsDec1Z6v0R2Pi02_!!6000000003146-2-tps-2320-1264.png",
-    "https://img.alicdn.com/imgextra/i4/O1CN01A4zJCm1uTSBaxhkZw_!!6000000006038-2-tps-1361-1274.png",
-  ];
 
   return (
     <Carousel
@@ -33,7 +47,7 @@ function CarouselFunc({ id }: { id: number }) {
       onChange={onChange}
       indicatorType="line"
       indicatorPosition="center"
-      indicatorSize="medium"
+      indicatorSize="small"
       theme="primary"
       autoPlay={false}
     >
@@ -77,7 +91,6 @@ function CarouselFunc({ id }: { id: number }) {
         );
       })}
     </Carousel>
-    // </div>
   );
 }
 
